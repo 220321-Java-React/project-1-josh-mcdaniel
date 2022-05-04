@@ -1,6 +1,5 @@
 package com.revature.models;
 
-import java.util.ArrayList;
 
 public class Reimbursement {
 	private int reimb_id;
@@ -115,7 +114,8 @@ public class Reimbursement {
 	@Override
 	public String toString() {
 		return "Reimbursement ID = " + reimb_id + ", Reimbursement Amount = " + reimb_amount + ", Reimbursement Submit Date = " + reimb_submitted + ", Reimbursement Reolve Date = " + 
-				reimb_resolve + ", Reimbursement Description = " + reimb_description + ", Reimbursement Ticket Author = " author.;
+				reimb_resolved + ", Reimbursement Description = " + reimb_description + ", Reimbursement Ticket Author = " + author.getFirstName() + " " + author.getLastName() + " " + 
+				author.getEmail() + ", Reimbursement Ticket Resolver = " + resolver.getFirstName() + " " + resolver.getLastName() + " " + resolver.getEmail();
 	}
 	
 	
